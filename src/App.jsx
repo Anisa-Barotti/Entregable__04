@@ -51,11 +51,7 @@ const App = () => {
     <div className="min-h-screen w-full bg-cover bg-center bg-gradient-to-r from-lime-400 flex flex-col justify-center items-center p-10 text-white gap-10">
       <Navbar actionBtnVisivle={handleClickVisible} />
       <UserList users={users} deleteUser={handleDelete} loadUsersForm={loadUsersForm} />
-      <Modal isVisible={isFormVisible}>
-        <div>
-          <form action="onSubmit={handleSubmit(myHandleSubmit)}"></form>
-        </div>
-      </Modal>
+      <Modal isVisible={isFormVisible}></Modal>
       <UserForm
         idUserToEdit={idUserToEdit}
         handleCreateUpdate={handleCreateUpdate}
