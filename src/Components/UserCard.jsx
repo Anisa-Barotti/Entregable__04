@@ -14,7 +14,7 @@ const UserCard = ({ user, deleteUser, loadUsersForm }) => {
       </h2>
       <h3>Email: {user.email.toLowerCase()}</h3>
       <h3>
-        Birthday:<i className="bx bx-gift bx-flashing"></i>
+        Birthday: <i className=""></i>
         {user.birthday.split('-').reverse().join(' / ')}
       </h3>
       <div className="flex flex-row justify-end gap-6">

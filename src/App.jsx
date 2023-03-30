@@ -7,7 +7,6 @@ import UserList from './Components/UserList';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Components/Footer';
-import Modal from './Components/modal';
 
 const App = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -51,7 +50,6 @@ const App = () => {
     <div className="min-h-screen w-full bg-cover bg-center bg-gradient-to-r from-lime-400 flex flex-col justify-center items-center p-10 text-white gap-10">
       <Navbar actionBtnVisivle={handleClickVisible} />
       <UserList users={users} deleteUser={handleDelete} loadUsersForm={loadUsersForm} />
-      <Modal isVisible={isFormVisible}></Modal>
       <UserForm
         idUserToEdit={idUserToEdit}
         handleCreateUpdate={handleCreateUpdate}
